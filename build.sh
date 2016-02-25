@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t cdb-jenkins-image .
+docker build -t computer-database-jenkins .
