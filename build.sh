@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t computer-database-jenkins .
+docker build -t vgalloy/computer-database-jenkins .

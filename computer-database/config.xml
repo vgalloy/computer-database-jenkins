@@ -34,7 +34,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cp ../workspace-config/* .
-bash script.sh</command>
+bash -x script.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
