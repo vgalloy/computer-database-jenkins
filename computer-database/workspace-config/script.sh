@@ -16,5 +16,5 @@ docker cp computer-database-builder:/opt/cdb/webapp/target/webapp-1.0-RELEASE.wa
 docker build -t vgalloy/computer-database-webapp .
 docker push vgalloy/computer-database-webapp
 
-bash glazer-deploy.sh --host 192.168.10.39 --port 65000 --env MYSQL_ROOT_PASSWORD=root vgalloy-computer-database-mysql vgalloy/computer-database-mysql-prod
-bash glazer-deploy.sh --host 192.168.10.39 --port 65000 --link vgalloy-computer-database-mysql:localhost --publish 65100:8080 vgalloy-computer-database-webapp vgalloy/computer-database-webapp
+bash glazer-deploy.sh --host 192.168.10.225 --port 65000 --env MYSQL_ROOT_PASSWORD=root vgalloy-computer-database-mysql vgalloy/computer-database-mysql-prod
+bash glazer-deploy.sh --host 192.168.10.225 --port 65000 --link vgalloy-computer-database-mysql:localhost --publish 65100:8080 vgalloy-computer-database-webapp vgalloy/computer-database-webapp
